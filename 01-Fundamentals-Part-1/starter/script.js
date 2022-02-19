@@ -44,7 +44,7 @@ x = y /= 2;
 // excute/calculate from right 2 left
 console.log(x, y)
 */
-const firstName = "Pele";
+/*const firstName = "Pele";
 const lastName = "Pan";
 let fullName = 'Hello \n\
 \n\
@@ -52,4 +52,20 @@ HI'
 console.log(fullName)
 console.log(`Hello \n\
 
-Hi`)
+Hi`*/
+
+// type coversion & type coercion(胁迫)
+const birthYear = '2001';
+console.log(Number(birthYear), birthYear);
+console.log(String(22), 22);
+
+// type coercion
+console.log(1 + 2 + 3 + '4');
+// > 64
+console.log('1' + '2' - 4);
+// > 8
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
+// > 10
