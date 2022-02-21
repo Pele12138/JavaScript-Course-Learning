@@ -44,7 +44,7 @@ x = y /= 2;
 // excute/calculate from right 2 left
 console.log(x, y)
 */
-const firstName = "Pele";
+/*const firstName = "Pele";
 const lastName = "Pan";
 let fullName = 'Hello \n\
 \n\
@@ -52,4 +52,10 @@ HI'
 console.log(fullName)
 console.log(`Hello \n\
 
-Hi`)
+Hi`)*/
+const hasDriverLisense = false;
+const hasGoodVision = true;
+
+console.log(hasDriverLisense && hasGoodVision);
+
+
