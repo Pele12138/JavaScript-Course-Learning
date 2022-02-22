@@ -84,7 +84,7 @@ if (age === 18) console.log("ALready a adult")
 // === strict equality operator (does not perform type coercion , only return true when both values are exactly the same)
 // == loose equality operator (does type coercion)
 
-let favourite = prompt("What's your favourite number?");
+/*let favourite = prompt("What's your favourite number?");
 console.log(favourite);
 if (favourite === '23') {
     console.log("You are already 23 years old!")
@@ -92,4 +92,19 @@ if (favourite === '23') {
     console.log("You are still a child")
 } else {
     console.log("You are not 23 or 7")
+<<<<<<< Updated upstream
 }
+=======
+}*/
+
+const hasDriveLicense = true;
+const hasGoodVision = false;
+const isTired = false;
+const shouldDrive = hasDriveLicense && hasGoodVision;
+console.log(shouldDrive);
+if (hasDriveLicense && hasGoodVision && !isTired) {
+    console.log("You can drive");
+} else {
+    console.log("You can't drive");
+}
+>>>>>>> Stashed changes
