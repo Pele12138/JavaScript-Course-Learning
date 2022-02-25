@@ -53,7 +53,7 @@ console.log(fullName)
 console.log(`Hello \n\
 
 Hi`)*/
-const hasDriverLisense = false;
+/*const hasDriverLisense = false;
 const hasGoodVision = true;
 
 console.log(hasDriverLisense && hasGoodVision);
@@ -77,7 +77,7 @@ n = n - 1;
 console.log(n); */
 // > 10
 
-const age = 18;
+/*const age = 18;
 if (age === 18) console.log("ALready a adult")
 
 // triple equal & double equal
@@ -92,12 +92,10 @@ if (favourite === '23') {
     console.log("You are still a child")
 } else {
     console.log("You are not 23 or 7")
-<<<<<<< Updated upstream
 }
-=======
 }*/
 
-const hasDriveLicense = true;
+/*const hasDriveLicense = true;
 const hasGoodVision = false;
 const isTired = false;
 const shouldDrive = hasDriveLicense && hasGoodVision;
@@ -106,5 +104,39 @@ if (hasDriveLicense && hasGoodVision && !isTired) {
     console.log("You can drive");
 } else {
     console.log("You can't drive");
-}
->>>>>>> Stashed changes
+}*/
+
+
+/* const day = 'thursday';
+
+switch (day) {
+    case 'monday':
+        console.log('You gotta fout lessons');
+        break;
+    case 'tuesday':
+        console.log('You have only 1 lesson! Ula')
+        break;
+    case 'wednesday':
+    case 'thursday':
+        console.log('Carry on, it\'s the middle of the week! ')
+    default:
+        break;
+} */
+
+// statements & fundmentals
+// expressions code that produce values
+// statement if/else {does't reallt produce a value }
+
+//ternary operator ( three parts )
+/*const age = 22;
+// age >= 18 ? console.log('U can drink beer 🍺') : console.log('Just drink water 💦');
+const drink = age >= 18 ? 'beer🍺' : 'water💦';
+console.log(drink)
+
+console.log(`I like to drink ${age >= 18 ? 'beer' : 'water '}`)*/
+
+
+// challenge #4
+const bill = 430;
+let tip = (bill >= 50 && bill <= 300) ? bill * .15 : bill * .2;
+console.log(`The bill value is $${bill},and the tip is $${tip},so you need to pay $${tip + bill}`)
