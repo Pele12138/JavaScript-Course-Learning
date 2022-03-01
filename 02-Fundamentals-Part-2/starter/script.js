@@ -35,7 +35,7 @@ checkWinner(avrKoalas, avrDolphins);*/
 //==================================//
 
 //Arrays
-const friends = ['Pele', 'Michael', 'Peter'];
+/* const friends = ['Pele', 'Michael', 'Peter'];
 console.log(friends);
 
 const years = new Array(1998, 1999, 2000, 2001);
@@ -46,4 +46,41 @@ console.log(friends[friends.length - 1]);
 
 const firstName = 'Pele';
 const pele = [firstName, 'Pan', friends, 2022 - 2001];
-console.log(pele);
+console.log(pele); */
+
+/* const friends = ['Pele', 'Michael', 'Peter'];
+console.log(friends.push('Pele'));
+console.log(friends)
+
+friends.unshift('John');
+console.log(friends);
+
+
+friends.pop(1);
+console.log(friends);
+
+friends.pop('Pele');
+console.log(friends) */
+
+/*const calcTip = function (bill) {
+    return bill <= 300 && bill >= 50 ? bill * .15 : bill * .2;
+}
+
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+console.log(tips);
+
+const total = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+console.log(total); */
+
+//Objects
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Pan',
+    age: 2022 - 2001,
+    job: 'Student',
+    friends: ['Michael', 'Peter', 'Steven ']
+};
+
+console.log(jonas)
