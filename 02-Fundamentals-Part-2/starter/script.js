@@ -75,12 +75,42 @@ console.log(total); */
 
 //Objects
 
-const jonas = {
-    firstName: 'Jonas',
+
+/* 
+console.log(pele);
+console.log(pele.lastName);
+console.log(pele['lastName']);
+const nameKey = 'Name';
+console.log(pele['first' + nameKey]);
+console.log(pele['last' + nameKey]);
+
+// const interstedIn = prompt('What do u want to now about Jonas?Choose between firstName, lastName, age or job.');
+// console.log(interstedIn);
+// console.log(pele[interstedIn]);
+
+pele.location = 'Hangzhou';
+pele['Instagram'] = '@Pele12138';
+console.log(pele);
+
+//pele['bestfriend'] = pele['friends'][0];
+// console.log(pele);
+
+console.log(`${pele.firstName} has ${pele['friends'].length} friends, and his best friend is ${pele['friends'][0]}`);
+
+ */
+
+const pele = {
+    firstName: 'Pele',
     lastName: 'Pan',
-    age: 2022 - 2001,
+    birthYear: 2001,
     job: 'Student',
-    friends: ['Michael', 'Peter', 'Steven ']
+    friends: ['Michael', 'Peter', 'Steven '],
+    haveDriveLicence: false,
+
+    // clacAge: function (birthYear) { return 2022 - birthYear; }
+    clacAge: function () { return 2022 - this.birthYear; }
 };
 
-console.log(jonas)
+// console.log(pele.clacAge(2001));
+// console.log(pele['clacAge'](2001));
+console.log(pele['clacAge']());
