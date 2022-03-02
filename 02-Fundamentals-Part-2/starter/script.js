@@ -99,7 +99,7 @@ console.log(`${pele.firstName} has ${pele['friends'].length} friends, and his be
 
  */
 
-const pele = {
+/* const pele = {
     firstName: 'Pele',
     lastName: 'Pan',
     birthYear: 2001,
@@ -109,8 +109,41 @@ const pele = {
 
     // clacAge: function (birthYear) { return 2022 - birthYear; }
     clacAge: function () { return 2022 - this.birthYear; }
-};
+}; */
 
 // console.log(pele.clacAge(2001));
 // console.log(pele['clacAge'](2001));
-console.log(pele['clacAge']());
+// console.log(pele['clacAge']());
+
+// Challenge #3
+const MarkMiller = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2
+        return this.bmi
+    },
+    // BMI: this.calcBMI()
+}
+const JohnSmith = {
+    firstName: 'John',
+    lastName: 'Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        this.bmi = this.mass / this.height ** 2
+        return this.bmi
+    },
+    // BMI: this.calcBMI()
+}
+
+
+MarkMiller.calcBMI();
+JohnSmith.calcBMI();
+console.log(MarkMiller.bmi);
+console.log(JohnSmith.bmi);
+if (MarkMiller.bmi > JohnSmith.bmi) { console.log(`Mark's BMI (${MarkMiller.bmi}) is higher than John's (${JohnSmith.bmi})`); } else {
+    console.log(`John's BMI (${JohnSmith.bmi}) is higher than Mark's (${MarkMiller.bmi})`);
+}
