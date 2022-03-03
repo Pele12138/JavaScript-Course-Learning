@@ -99,7 +99,7 @@ console.log(`${pele.firstName} has ${pele['friends'].length} friends, and his be
 
  */
 
-const pele = {
+/*const pele = {
     firstName: 'Pele',
     lastName: 'Pan',
     birthYear: 2001,
@@ -113,4 +113,32 @@ const pele = {
 
 // console.log(pele.clacAge(2001));
 // console.log(pele['clacAge'](2001));
-console.log(pele['clacAge']());
+console.log(pele['clacAge']());*/
+
+
+//loops
+/* for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋🏻`)
+} */
+
+//loop through ararys
+const types = [];
+
+const pele = {
+    firstName: 'Pele',
+    lastName: 'Pan',
+    birthYear: 2001,
+    job: 'Student',
+    friends: ['Michael', 'Peter', 'Steven '],
+    haveDriveLicence: false,
+
+    // clacAge: function (birthYear) { return 2022 - birthYear; }
+    clacAge: function () { return 2022 - this.birthYear; }
+};
+const friends = ['Pele', 'Michael', 'Peter'];
+for (let i in pele) {
+    console.log(pele[i]);
+    if (typeof pele[i] !== 'string') continue;
+    types.push(pele[i]);
+}
+console.log(types);
