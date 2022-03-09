@@ -1,3 +1,4 @@
+
 /* // 'use strcit';
 // function declaration
 function fruitProcessor(apples, oranges) {
@@ -76,7 +77,7 @@ console.log(total); */
 //Objects
 
 
-/* 
+/*
 console.log(pele);
 console.log(pele.lastName);
 console.log(pele['lastName']);
@@ -122,7 +123,7 @@ console.log(pele['clacAge']());*/
 } */
 
 //loop through ararys
-const types = [];
+/* const types = [];
 
 const pele = {
     firstName: 'Pele',
@@ -133,7 +134,7 @@ const pele = {
     haveDriveLicence: false,
 
     // clacAge: function (birthYear) { return 2022 - birthYear; }
-    clacAge: function () { return 2022 - this.birthYear; }
+    clacAge: fun ction () { return 2022 - this.birthYear; }
 };
 const friends = ['Pele', 'Michael', 'Peter'];
 for (let i in pele) {
@@ -141,4 +142,62 @@ for (let i in pele) {
     if (typeof pele[i] !== 'string') continue;
     types.push(pele[i]);
 }
-console.log(types);
+console.log(types); */
+
+/* const pele = [
+    'Pele',
+    'Pan',
+    2020 - 2001,
+    'Student',
+    ['Michael', 'Peter', 'Steven']
+]
+for (let i = pele.length - 1; i >= 0; i--) {
+    console.log(i, pele[i]);
+}
+
+
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`-------- Starting exercise ${exercise}`)
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Lifting weight repetition ${rep} 🏋🏻`)
+    }
+} */
+
+/* //While loop
+let dice = Math.trunc(Math.random() * 6 + 1);
+console.log(dice)
+while (dice > 0) {
+    console.log(`WHILE: Lifting weights reprtition ${dice}`);
+    dice--;
+} */
+
+// Challenge #4
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [], total = [];
+
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        sum += element;
+    }
+    return sum / arr.length;
+}
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+for (let index = 0; index < bills.length; index++) {
+    const element = calcTip(bills[index]);
+    tips.push(element);
+    total.push(element + bills[index]);
+}
+console.log(tips);
+console.log(total);
+console.log(calcAverage(tips));
+console.log(calcAverage(total));
