@@ -75,8 +75,12 @@ console.log(total); */
 
 //Objects
 
+<<<<<<< Updated upstream
 
 /* 
+=======
+/*
+>>>>>>> Stashed changes
 console.log(pele);
 console.log(pele.lastName);
 console.log(pele['lastName']);
@@ -113,6 +117,7 @@ console.log(`${pele.firstName} has ${pele['friends'].length} friends, and his be
 
 // console.log(pele.clacAge(2001));
 // console.log(pele['clacAge'](2001));
+<<<<<<< Updated upstream
 // console.log(pele['clacAge']());
 
 // Challenge #3
@@ -126,6 +131,34 @@ const MarkMiller = {
         return this.bmi
     },
     // BMI: this.calcBMI()
+=======
+console.log(pele['clacAge']());*/
+
+//loops
+/* for (let rep = 1; rep <= 10; rep++) {
+    console.log(`Lifting weights repetition ${rep} 🏋🏻`)
+} */
+
+//loop through ararys
+/* const types = [];
+
+const pele = {
+    firstName: 'Pele',
+    lastName: 'Pan',
+    birthYear: 2001,
+    job: 'Student',
+    friends: ['Michael', 'Peter', 'Steven '],
+    haveDriveLicence: false,
+
+    // clacAge: function (birthYear) { return 2022 - birthYear; }
+    clacAge: fun ction () { return 2022 - this.birthYear; }
+};
+const friends = ['Pele', 'Michael', 'Peter'];
+for (let i in pele) {
+    console.log(pele[i]);
+    if (typeof pele[i] !== 'string') continue;
+    types.push(pele[i]);
+>>>>>>> Stashed changes
 }
 const JohnSmith = {
     firstName: 'John',
@@ -140,6 +173,7 @@ const JohnSmith = {
 }
 
 
+<<<<<<< Updated upstream
 MarkMiller.calcBMI();
 JohnSmith.calcBMI();
 console.log(MarkMiller.bmi);
@@ -147,3 +181,50 @@ console.log(JohnSmith.bmi);
 if (MarkMiller.bmi > JohnSmith.bmi) { console.log(`Mark's BMI (${MarkMiller.bmi}) is higher than John's (${JohnSmith.bmi})`); } else {
     console.log(`John's BMI (${JohnSmith.bmi}) is higher than Mark's (${MarkMiller.bmi})`);
 }
+=======
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`-------- Starting exercise ${exercise}`)
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Lifting weight repetition ${rep} 🏋🏻`)
+    }
+} */
+
+/* //While loop
+let dice = Math.trunc(Math.random() * 6 + 1);
+console.log(dice)
+while (dice > 0) {
+    console.log(`WHILE: Lifting weights reprtition ${dice}`);
+    dice--;
+} */
+
+// Challenge #4
+/*const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [], total = [];
+
+
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let index = 0; index < arr.length; index++) {
+        const element = arr[index];
+        sum += element;
+    }
+    return sum / arr.length;
+}
+
+const calcTip = function (bill) {
+    return bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+}
+// const calcTip = bill => bill >= 50 && bill <= 300 ? bill * 0.15 : bill * 0.2;
+
+// const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])];
+// const totals = [bills[0] + tips[0], bills[1] + tips[1], bills[2] + tips[2]];
+for (let index = 0; index < bills.length; index++) {
+    const element = calcTip(bills[index]);
+    tips.push(element);
+    total.push(element + bills[index]);
+}
+console.log(tips);
+console.log(total);
+console.log(calcAverage(tips));
+console.log(calcAveraage(total));*/
+>>>>>>> Stashed changes
